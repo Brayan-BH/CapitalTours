@@ -1,5 +1,5 @@
 .head-img
-    background-image: url(http://taxipiuramancora.com/img/banner2.jpg)
+    // background-image: url(http://taxipiuramancora.com/img/banner2.jpg)
     height: -webkit-calc(100vh - 54px)
     height: -moz-calc(100vh - 54px)
     height: calc(100vh - 54px)
@@ -40,21 +40,26 @@
         margin: auto
         padding: 5px
 .container-content
-    margin-top: 20%
-
+    margin-top: 15%
+    display: grid
+    grid-template-columns: 2fr 2fr
     .text
         display: flex
         align-items: flex-start
         flex-direction: column
         justify-content: center
-        color: #fff
+        // color: #fff
         font-weight: 600
         >p
             text-align: left
             margin: 0.5rem 0 5rem
-            font-size: 1.7rem
+            font-size: 2rem
         >h1
-            font-size: 3rem
+            font-size: 4.3rem
+        .text__buttons
+            display: grid
+            grid-template-columns: 1fr 1fr
+            gap: 4rem
     .image-banner
         min-width: 400px
         position: relative
@@ -80,7 +85,13 @@
             position: relative
             .img__gradient
                 display: unset
+    .text__img
+        display: grid
+        grid-column: 1
 @media (max-width: 700px)
     .main-head
         .head-detail
             position: relative
+    .text__img
+        display: grid
+        grid-column: 1
