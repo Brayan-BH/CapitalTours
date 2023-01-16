@@ -36,7 +36,7 @@
                             </div>
                         </div>
                         <div class="text__img">
-                            <img src="	https://www.alotaxis.com/img/imagen2.svg" alt="svg">
+                            <img src="/img/svg/imagen2.svg" alt="svg">
                         </div>
                     </div>
                 </div>
