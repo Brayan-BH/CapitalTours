@@ -7,6 +7,7 @@
                     Pariatur in dolore incididunt laboris deserunt aliquip voluptate esse anim tempor do fugiat
                     reprehenderit sapeeee.
                 </p>
+                <p>Sapeeee 2</p>
                 <p class="banner__link">
                     <span class="link__text">Obtener más información</span>
                     <span class="link__icon material-icons">navigate_next</span>
