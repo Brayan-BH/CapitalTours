@@ -5,7 +5,7 @@
             <div class="head-banner">
                 <p class="banner__text">
                     Pariatur in dolore incididunt laboris deserunt aliquip voluptate esse anim tempor do fugiat
-                    reprehenderit eiusmod.
+                    reprehenderit sapeeee.
                 </p>
                 <p class="banner__link">
                     <span class="link__text">Obtener más información</span>
