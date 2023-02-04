@@ -1,10 +1,4 @@
 <template>
-    <main>
-<<<<<<< HEAD
-        <Intro />
-        <Servicio />
-        <About />
-=======
         <div class="main-head">
             <div class="head-banner">
                 <p class="banner__text">
@@ -47,6 +41,4 @@
                 </div>
             </div>
         </div>
->>>>>>> 9a90710d518c3dc85679baccce7ef052e61c8789
-    </main>
 </template>
