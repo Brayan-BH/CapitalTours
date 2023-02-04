@@ -4,17 +4,15 @@
         <div class="head-container">
             <div class="container__item">
                 <div class="item__button_menu" ref="button_movil_menu">
-                    <a :href="interaction.menu_movil_action" class="item-button-menu__href" @click="menu_movil_click">
+                    <nuxt-link  :href="interaction.menu_movil_action" class="item-button-menu__href" @click="menu_movil_click">
                         <div class="item-button-menu__container">
                             <i class="material-icons">{{ interaction.movil_menu_icon }}</i>
                         </div>
-                    </a>
+                    </nuxt-link >
                 </div>
-                <a class="item__logo" itemprop="url" href="#">
-                    <img class="logo__img"
-                        src="/img/logo.png"
-                        alt="logo">
-                </a>
+                <nuxt-link  class="item__logo" itemprop="url" href="/">
+                    <img class="logo__img" src="/img/logo.png" alt="logo">
+                </nuxt-link >
                 <div class="item__div">
                     <nuxt-link class="div__text" to="/">
                         <span>Capital Tours</span>
@@ -29,16 +27,15 @@
                             <nuxt-link to="/nosotros" class="li__text">Nosotros</nuxt-link>
                         </li>
                         <li class="ul__li">
-                            <nuxt-link to="/servicios" class="li__text">Servicios</nuxt-link>
-                        </li>
-                        <li class="ul__li">
                             <nuxt-link to="/equipo" class="li__text">Equipo</nuxt-link>
                         </li>
                         <li class="ul__li">
-                            <nuxt-link to="/contactanos" class="li__text">Contactanos</nuxt-link>
+                            <nuxt-link to="/contactanos" class="li__text">Contáctanos</nuxt-link>
                         </li>
                         <li class="ul__li">
-                            <nuxt-link to="/empresas" class="li__text">Empresas</nuxt-link>
+                            <nuxt-link to="/empresas" class="li__text">Empresa</nuxt-link>
+                        </li><li class="ul__li">
+                            <nuxt-link to="/servicios" class="li__text">Servicios</nuxt-link>
                         </li>
                         <li class="ul__li">
                             <nuxt-link to="/requisitos" class="li__text">Requisitos</nuxt-link>
@@ -53,37 +50,29 @@
                                 <ul class="menu_ul">
                                     <li class="ul__li">
                                         <div class="li__container">
-                                            <button type="button" class="li-container__button">¿Por qué Capital Tours?
+                                            <button type="button" class="li-container__button">
+                                                Servicios
                                             </button>
                                             <ul class="li-container__menu">
                                                 <li class="">
-                                                    <span class="menu__header">Para el hogar</span>
+                                                    <span class="menu__header">Para Pequeñas Empresas</span>
                                                     <ul class="menu__body">
                                                         <li class="body__item">
-                                                            <a>Precios para el hogar</a>
+                                                            <nuxt-link to="">Contabilidad</nuxt-link >
                                                         </li>
                                                         <li class="body__item">
-                                                            <a>Para familias</a>
-                                                        </li>
-                                                        <li class="body__item">
-                                                            <a>Para particulares</a>
-                                                        </li>
-                                                        <li class="body__item">
-                                                            <a>Para estudiantes</a>
-                                                        </li>
-                                                        <li class="body__item">
-                                                            <a>Ver todos los artículos</a>
+                                                            <nuxt-link to="">Facturación</nuxt-link >
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li class="">
-                                                    <span class="menu__header">Para empresas</span>
+                                                    <span class="menu__header">Para Mediana Empresa</span>
                                                     <ul class="menu__body">
                                                         <li class="body__item">
-                                                            <a>Precios para pequeñas empresas</a>
+                                                            <nuxt-link to="">Contabilidad</nuxt-link >
                                                         </li>
                                                         <li class="body__item">
-                                                            <a>Para pequeñas empresas</a>
+                                                            <nuxt-link to="">Sucursales</nuxt-link >
                                                         </li>
                                                     </ul>
                                                 </li>
@@ -92,13 +81,16 @@
                                                     <span class="menu__header">Para grandes empresas</span>
                                                     <ul class="menu__body">
                                                         <li class="body__item">
-                                                            <a>Precios para grandes empresas</a>
+                                                            <nuxt-link to="">Precios para grandes empresas</nuxt-link >
                                                         </li>
                                                         <li class="body__item">
-                                                            <a>Para grandes empresas</a>
+                                                            <nuxt-link to="">Multi Sucursales</nuxt-link >
                                                         </li>
                                                         <li class="body__item">
-                                                            <a>Para personal de primera línea</a>
+                                                            <nuxt-link to="">Contabilidad</nuxt-link >
+                                                        </li>
+                                                        <li class="body__item">
+                                                            <nuxt-link to="">Stock</nuxt-link>
                                                         </li>
                                                     </ul>
                                                 </li>
@@ -109,22 +101,26 @@
 
                             </nav>
                         </div>
-                        <!-- <div class="action__control">
+                        <div class="action__control">
                             <div class="control__container">
-                                <div class="container__text cl-session">Iniciar sesión</div>
+                                <div class="container__text cl-session">
+                                    <nuxt-link to="/login" class="li__text">Iniciar Sesión</nuxt-link>
+                                </div>
                                 <div class="container__icon">
-                                    <i class="material-icons">login</i>
+                                    <nuxt-link to="/login" class="material-icons">login</nuxt-link>
                                 </div>
                             </div>
                         </div>
                         <div class="action__control">
                             <div class="control__container">
-                                <div class="container__text">Regístrate ahora</div>
+                                <div class="container__text">
+                                    <nuxt-link to="/signup" class="li__text">Registrate Ahora</nuxt-link>
+                                </div>
                                 <div class="container__icon">
-                                    <i class="material-icons">how_to_reg</i>
+                                    <nuxt-link to="/signup" class="material-icons">how_to_reg</nuxt-link>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
 
                     </div>
                 </div>
