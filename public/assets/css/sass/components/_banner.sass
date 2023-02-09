@@ -1,47 +1,147 @@
 .main-head
-	position: relative
-	.head-banner
-		display: flex
-		-webkit-box-orient: horizontal
-		-webkit-box-direction: normal
-		-webkit-flex-direction: row
-		-moz-box-orient: horizontal
-		-moz-box-direction: normal
-		-ms-flex-direction: row
-		flex-direction: row
-		-webkit-box-align: center
-		-webkit-align-items: center
-		-moz-box-align: center
-		-ms-flex-align: center
-		align-items: center
-		-webkit-box-pack: center
-		-webkit-justify-content: center
-		-moz-box-pack: center
-		-ms-flex-pack: center
-		justify-content: center
-		// height: 64px
-		background: #43be1e
-		padding: 8px
-		font-size: 17px
-		.banner__text
-			color: #FFF
-		.banner__link
-			color: #FFF
-			margin-left: 8px
-			cursor: pointer
-			display: inline
-			text-decoration: none
-			display: inline-flex
-			align-items: center
-			.link__text
-				border-bottom: 0 solid transparent
-				transition: all .2s ease-in-out
-				font-weight: 600
-				&:hover
-					border-color: #FFF
-					margin-left: 0
-					border-bottom: 2px solid
-					margin-right: 4px
-			.link__icon
-				font-size: 20px
-	
+    position: relative
+    .head-banner
+        display: flex
+        -webkit-box-orient: horizontal
+        -webkit-box-direction: normal
+        -webkit-flex-direction: row
+        -moz-box-orient: horizontal
+        -moz-box-direction: normal
+        -ms-flex-direction: row
+        flex-direction: row
+        -webkit-box-align: center
+        -webkit-align-items: center
+        -moz-box-align: center
+        -ms-flex-align: center
+        align-items: center
+        -webkit-box-pack: center
+        -webkit-justify-content: center
+        -moz-box-pack: center
+        -ms-flex-pack: center
+        justify-content: center
+        background: #43be1e
+        padding: 8px
+        .banner__text
+            color: #FFF
+        .banner__link
+            color: #FFF
+            margin-left: 8px
+            cursor: pointer
+            display: inline
+            text-decoration: none
+            display: inline-flex
+            align-items: center
+            .link__text
+                border-bottom: 0 solid transparent
+                transition: all .2s ease-in-out
+                font-weight: 600
+                a
+                    text-decoration: none
+                    color: #fff
+                    padding-top: 12px
+                    padding-bottom: 12px
+                    display: block
+                    white-space: normal
+                &:hover
+                    border-color: #FFF
+                    margin-left: 0
+                    border-bottom: 2px solid
+                    margin-right: 4px
+            .link__icon
+                font-size: 20px
+    .head-img
+        background-image: url(/img/banner/banner.svg)
+        height: -webkit-calc(100vh - 54px)
+        height: -moz-calc(100vh - 54px)
+        height: calc(100vh - 54px)
+        background-repeat: no-repeat
+        background-position: center
+        -moz-background-size: cover
+        -o-background-size: cover
+        background-size: cover
+        position: unset
+        .img__gradient
+            height: 200px
+            position: absolute
+            display: none
+            background: -webkit-gradient(linear,left top,left bottom,color-stop(73.43%,rgba(255,255,255,0)),color-stop(89.91%,#FFF))
+            background: -webkit-linear-gradient(top,rgba(255,255,255,0) 73.43%,#FFF 89.91%)
+            background: oldlinear-gradient(top,rgba(255,255,255,0) 73.43%,#FFF 89.91%) -moz-
+            background: -o-linear-gradient(top,rgba(255,255,255,0) 73.43%,#FFF 89.91%)
+            background: linear-gradient(180deg,rgba(255,255,255,0) 73.43%,#FFF 89.91%)
+            width: 100%
+            bottom: 0
+    .head-container-img
+        position: absolute
+        top: 0
+        background-image: url('../img/platcont-view.png')
+        background-repeat: no-repeat
+        width: 100%
+        height: 100%
+.head-detail
+    width: 100%
+    position: absolute
+    top: 0
+    .main-container
+        max-width: 1600px
+        width: 100%
+        margin: auto
+        padding: 0 5%
+.container-content
+    margin-top: 20%
+    .text
+        display: flex
+        align-items: flex-start
+        flex-direction: column
+        justify-content: center
+        color: #fff
+        >p
+            text-align: left
+            margin: 0.5rem 0 5rem
+            font-size: 2.3rem
+        >h1
+            font-size: 3.5rem
+    .image-banner
+        min-width: 400px
+        position: relative
+        .banner-img
+            min-width: 400px
+            min-height: 400px
+            width: 100%
+            height: 100%
+            background-image: url('../img/globo.png')
+            background-repeat: no-repeat
+            background-size: contain
+            background-position: center
+            .img-reference
+                background-repeat: no-repeat
+                width: 100%
+                height: 100%
+.text__buttons
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 1.5rem
+@media (max-width: 1023px)
+    .main-head
+        .head-img
+            height: 50vh
+            background-position: right
+            position: relative
+            .img__gradient
+                display: unset
+    .container-content .text
+            text-align: left
+            margin: .5rem 0 5rem
+            font-size: 1.7rem
+            color: #111
+
+@media (max-width: 700px)
+    .main-head
+        .head-detail
+            position: relative
+    .container-content .text
+        >p
+            text-align: left
+            margin: .5rem 0 5rem
+            font-size: 1.7rem
+            color: #111
